@@ -1,0 +1,29 @@
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.exe.config
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.exe
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.pdb
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.dll
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.pdb
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.dll.config
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.AssemblyReference.cache
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.FormSmpServer.resources
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.Properties.Resources.resources
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.GenerateResource.cache
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.CoreCompileInputs.cache
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageS.41553B42.Up2Date
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.exe
+C:\Users\mjkoe\Dropbox\Code\CISS346\00_Assignments\05_SMP_Messenger\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.exe.config
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.exe
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMPServer.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.dll
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\bin\Debug\SMP_Library.dll.config
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.AssemblyReference.cache
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.exe.config
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.FormSmpServer.resources
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.Properties.Resources.resources
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.GenerateResource.cache
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageServer.csproj.CoreCompileInputs.cache
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\MessageS.41553B42.Up2Date
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.exe
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\SMP_GUI_Client_Server_V_1_Version_Field\MessageServer\obj\Debug\SMPServer.pdb

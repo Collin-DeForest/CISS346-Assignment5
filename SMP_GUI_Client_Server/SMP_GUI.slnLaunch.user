@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MessageConsumer\\MessageConsumer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MessageProducer\\MessageProducer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MessageServer\\MessageServer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
