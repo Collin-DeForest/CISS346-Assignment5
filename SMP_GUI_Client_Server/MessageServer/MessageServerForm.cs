@@ -72,28 +72,38 @@ namespace SMPServer
         {
             textBoxMessages.Clear();
 
-            StreamReader reader = new StreamReader("Messages.txt");
+            // Determine selected priority
+            string filterPriority = null;
+            if (radioButtonPriorityLow.Checked) filterPriority = "1";
+            else if (radioButtonPriorityMedium.Checked) filterPriority = "2";
+            else if (radioButtonPriorityHigh.Checked) filterPriority = "3";
+            else if (radioAll.Checked) filterPriority = null; // Show all
 
-            string version = reader.ReadLine();
-
-            while (version != null)
+            using (StreamReader reader = new StreamReader("Messages.txt"))
             {
-                string priority = reader.ReadLine();
-                string dateTime = reader.ReadLine();
-                string message = reader.ReadLine();
-                string emptyLine = reader.ReadLine();
+                while (true)
+                {
+                    string version = reader.ReadLine();
+                    if (version == null) break;
 
-                string record = "Version: " + version + Environment.NewLine;
-                record += "Priority: " + priority + Environment.NewLine;
-                record += "Date/Time: " + dateTime + Environment.NewLine;
-                record += "Message: " + message + Environment.NewLine;
+                    string priority = reader.ReadLine();
+                    string dateTime = reader.ReadLine();
+                    string message = reader.ReadLine();
+                    string empty = reader.ReadLine();
 
-                textBoxMessages.AppendText(record + Environment.NewLine);
+                    // Filter by priority and create text
+                    if (filterPriority == null || priority == filterPriority)
+                    {
+                        string record = "Version: " + version + Environment.NewLine;
+                        record += "Priority: " + priority + Environment.NewLine;
+                        record += "Date/Time: " + dateTime + Environment.NewLine;
+                        record += "Message: " + message + Environment.NewLine;
 
-                version = reader.ReadLine();
+                        textBoxMessages.AppendText(record + Environment.NewLine);
+                    }
+                }
             }
-
-            reader.Close();
         }
+
     }
 }

@@ -1,6 +1,8 @@
 ﻿using SMP_Library;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 
@@ -81,6 +83,8 @@ namespace SMPServer
 
                     PacketEventArgs eventArgs = new PacketEventArgs(smpPacket);
 
+
+
                     if (PacketRecieved != null) PacketRecieved(null, eventArgs);
                 }
             }
@@ -119,31 +123,67 @@ namespace SMPServer
             }
         }
 
-        private static SmpPacket ProcessSmpGetPacket(string priority)
+        private static SmpPacket ProcessSmpGetPacket(string requestedPriority)
         {
-            SmpPacket smpPacket = null;
-
             try
             {
-                StreamReader reader = new StreamReader("Messages.txt");
-                
-                string smpVersion = reader.ReadLine();
-                priority = reader.ReadLine();
-                string dateTime = reader.ReadLine();
-                string message = reader.ReadLine();
+                var lines = File.ReadAllLines("Messages.txt").ToList();
+                var remaining = new List<string>();
 
-                reader.Close();
+                SmpPacket foundPacket = null;
 
-                smpPacket = new SmpPacket(smpVersion, Enumerations.SmpMessageType.GetMessage.ToString(),
-                    dateTime, priority, message);
+                for (int i = 0; i < lines.Count;)
+                {
+                    // Skip blank lines
+                    if (string.IsNullOrWhiteSpace(lines[i]))
+                    {
+                        i++;
+                        continue;
+                    }
+
+                    //4 lines for a packet
+                    if (i + 3 >= lines.Count)
+                        break;
+
+                    string version = lines[i];
+                    string priority = lines[i + 1];
+                    string date = lines[i + 2];
+                    string message = lines[i + 3];
+
+                    bool match = (foundPacket == null && priority == requestedPriority);
+
+                    if (match)
+                    {
+                        // Build packet to return
+                        foundPacket = new SmpPacket(version, Enumerations.SmpMessageType.GetMessage.ToString(), priority, date, message);
+                    }
+                    else
+                    {
+                        // Keep other packets
+                        remaining.Add(version);
+                        remaining.Add(priority);
+                        remaining.Add(date);
+                        remaining.Add(message);
+                        remaining.Add("");
+                    }
+
+                    i += 4; // move to next packet
+                }
+
+                // Rewrite file
+                File.WriteAllLines("Messages.txt", remaining);
+
+                return foundPacket;
             }
             catch (Exception ex)
             {
                 ExceptionLogger.LogExeption(ex);
+                return null;
             }
-
-            return smpPacket;
         }
+
+
+
         private static void SendSmpResponsePacket(String responsePacket, NetworkStream dataStream)
         {
             StreamWriter writer = new StreamWriter(dataStream);
