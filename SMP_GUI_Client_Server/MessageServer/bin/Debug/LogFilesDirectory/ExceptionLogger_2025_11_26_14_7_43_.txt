@@ -1,0 +1,12 @@
+Date/Time: 11/26/2025 2:07:42 PM
+Assembly: SMPServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Operating System: Microsoft Windows NT 6.2.9200.0
+Working Set: 41230336
+Message: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+Source: mscorlib
+Exception Stack Trace: 
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at SMPServer.MessageServer.ProcessSmpGetPacket(String requestedPriority) in C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\MessageServer.cs:line 157
+
