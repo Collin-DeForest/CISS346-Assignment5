@@ -79,7 +79,7 @@ namespace SMPServer
                     string responsePacket = "";
                     if (smpPacket == null)
                     {
-                        responsePacket = "No Message Available" + Environment.NewLine;
+                        responsePacket = "NO_MESSAGE_FOUND";
                         SendSmpResponsePacket(responsePacket, networkStream);
                         networkStreamReader.Close();
                         return;
