@@ -43,6 +43,10 @@
             this.radioButtonPriorityLow = new System.Windows.Forms.RadioButton();
             this.textBoxServerResponse = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -50,13 +54,19 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxApplicationPortNumber);
             this.groupBox1.Controls.Add(this.textBoxServerIPAddress);
-            this.groupBox1.Location = new System.Drawing.Point(12, 31);
+            this.groupBox1.Location = new System.Drawing.Point(11, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(673, 85);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(598, 105);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
@@ -64,35 +74,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(341, 43);
+            this.label2.Location = new System.Drawing.Point(303, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 20);
+            this.label2.Size = new System.Drawing.Size(152, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Application Port Number";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 40);
+            this.label1.Location = new System.Drawing.Point(15, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 20);
+            this.label1.Size = new System.Drawing.Size(116, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Server IP Address";
             // 
             // textBoxApplicationPortNumber
             // 
-            this.textBoxApplicationPortNumber.Location = new System.Drawing.Point(546, 37);
+            this.textBoxApplicationPortNumber.Location = new System.Drawing.Point(485, 30);
+            this.textBoxApplicationPortNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxApplicationPortNumber.Name = "textBoxApplicationPortNumber";
-            this.textBoxApplicationPortNumber.Size = new System.Drawing.Size(89, 26);
+            this.textBoxApplicationPortNumber.Size = new System.Drawing.Size(80, 22);
             this.textBoxApplicationPortNumber.TabIndex = 1;
             this.textBoxApplicationPortNumber.Text = "50400";
             this.textBoxApplicationPortNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxServerIPAddress
             // 
-            this.textBoxServerIPAddress.Location = new System.Drawing.Point(160, 37);
+            this.textBoxServerIPAddress.Location = new System.Drawing.Point(142, 30);
+            this.textBoxServerIPAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxServerIPAddress.Name = "textBoxServerIPAddress";
-            this.textBoxServerIPAddress.Size = new System.Drawing.Size(162, 26);
+            this.textBoxServerIPAddress.Size = new System.Drawing.Size(144, 22);
             this.textBoxServerIPAddress.TabIndex = 0;
             this.textBoxServerIPAddress.Text = "127.0.0.1";
             this.textBoxServerIPAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -103,18 +115,21 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.textBoxMessageContent);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(13, 136);
+            this.groupBox2.Location = new System.Drawing.Point(11, 154);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(672, 323);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(597, 258);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Message";
             // 
             // buttonSendMessage
             // 
-            this.buttonSendMessage.Location = new System.Drawing.Point(190, 270);
+            this.buttonSendMessage.Location = new System.Drawing.Point(169, 216);
+            this.buttonSendMessage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSendMessage.Name = "buttonSendMessage";
-            this.buttonSendMessage.Size = new System.Drawing.Size(462, 47);
+            this.buttonSendMessage.Size = new System.Drawing.Size(411, 38);
             this.buttonSendMessage.TabIndex = 5;
             this.buttonSendMessage.Text = "Send Message";
             this.buttonSendMessage.UseVisualStyleBackColor = true;
@@ -123,18 +138,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(186, 41);
+            this.label3.Location = new System.Drawing.Point(165, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 20);
+            this.label3.Size = new System.Drawing.Size(112, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Message Content";
             // 
             // textBoxMessageContent
             // 
-            this.textBoxMessageContent.Location = new System.Drawing.Point(188, 77);
+            this.textBoxMessageContent.Location = new System.Drawing.Point(167, 62);
+            this.textBoxMessageContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMessageContent.Multiline = true;
             this.textBoxMessageContent.Name = "textBoxMessageContent";
-            this.textBoxMessageContent.Size = new System.Drawing.Size(464, 175);
+            this.textBoxMessageContent.Size = new System.Drawing.Size(413, 141);
             this.textBoxMessageContent.TabIndex = 1;
             this.textBoxMessageContent.Text = "Test Message";
             // 
@@ -143,9 +159,11 @@
             this.groupBox3.Controls.Add(this.radioButtonPriorityHigh);
             this.groupBox3.Controls.Add(this.radioButtonPriorityMedium);
             this.groupBox3.Controls.Add(this.radioButtonPriorityLow);
-            this.groupBox3.Location = new System.Drawing.Point(30, 41);
+            this.groupBox3.Location = new System.Drawing.Point(27, 33);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(139, 212);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(124, 170);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Priority";
@@ -153,9 +171,10 @@
             // radioButtonPriorityHigh
             // 
             this.radioButtonPriorityHigh.AutoSize = true;
-            this.radioButtonPriorityHigh.Location = new System.Drawing.Point(10, 147);
+            this.radioButtonPriorityHigh.Location = new System.Drawing.Point(9, 118);
+            this.radioButtonPriorityHigh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonPriorityHigh.Name = "radioButtonPriorityHigh";
-            this.radioButtonPriorityHigh.Size = new System.Drawing.Size(67, 24);
+            this.radioButtonPriorityHigh.Size = new System.Drawing.Size(56, 20);
             this.radioButtonPriorityHigh.TabIndex = 2;
             this.radioButtonPriorityHigh.Text = "High";
             this.radioButtonPriorityHigh.UseVisualStyleBackColor = true;
@@ -163,9 +182,10 @@
             // radioButtonPriorityMedium
             // 
             this.radioButtonPriorityMedium.AutoSize = true;
-            this.radioButtonPriorityMedium.Location = new System.Drawing.Point(10, 92);
+            this.radioButtonPriorityMedium.Location = new System.Drawing.Point(9, 74);
+            this.radioButtonPriorityMedium.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonPriorityMedium.Name = "radioButtonPriorityMedium";
-            this.radioButtonPriorityMedium.Size = new System.Drawing.Size(90, 24);
+            this.radioButtonPriorityMedium.Size = new System.Drawing.Size(76, 20);
             this.radioButtonPriorityMedium.TabIndex = 1;
             this.radioButtonPriorityMedium.Text = "Medium";
             this.radioButtonPriorityMedium.UseVisualStyleBackColor = true;
@@ -174,9 +194,10 @@
             // 
             this.radioButtonPriorityLow.AutoSize = true;
             this.radioButtonPriorityLow.Checked = true;
-            this.radioButtonPriorityLow.Location = new System.Drawing.Point(10, 37);
+            this.radioButtonPriorityLow.Location = new System.Drawing.Point(9, 30);
+            this.radioButtonPriorityLow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonPriorityLow.Name = "radioButtonPriorityLow";
-            this.radioButtonPriorityLow.Size = new System.Drawing.Size(63, 24);
+            this.radioButtonPriorityLow.Size = new System.Drawing.Size(52, 20);
             this.radioButtonPriorityLow.TabIndex = 0;
             this.radioButtonPriorityLow.TabStop = true;
             this.radioButtonPriorityLow.Text = "Low";
@@ -184,30 +205,64 @@
             // 
             // textBoxServerResponse
             // 
-            this.textBoxServerResponse.Location = new System.Drawing.Point(201, 477);
+            this.textBoxServerResponse.Location = new System.Drawing.Point(181, 441);
+            this.textBoxServerResponse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxServerResponse.Multiline = true;
             this.textBoxServerResponse.Name = "textBoxServerResponse";
-            this.textBoxServerResponse.Size = new System.Drawing.Size(464, 38);
+            this.textBoxServerResponse.Size = new System.Drawing.Size(413, 31);
             this.textBoxServerResponse.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 480);
+            this.label4.Location = new System.Drawing.Point(13, 443);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(113, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Server Response";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "User ID";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(303, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Password";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(142, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 22);
+            this.textBox1.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(376, 63);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(189, 22);
+            this.textBox2.TabIndex = 7;
+            // 
             // MessageProducerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 550);
+            this.ClientSize = new System.Drawing.Size(636, 503);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxServerResponse);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MessageProducerForm";
@@ -241,6 +296,10 @@
         private System.Windows.Forms.RadioButton radioButtonPriorityLow;
         private System.Windows.Forms.TextBox textBoxServerResponse;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
