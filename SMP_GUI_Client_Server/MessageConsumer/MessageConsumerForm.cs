@@ -30,10 +30,12 @@ namespace SMPClientConsumer
             {
                 priority = 3;
             }
+            string userID = textBoxUserID.Text;
+            string password = textBoxPassword.Text;
 
             //Build the SMP packet
             SmpPacket smpPacket = new SmpPacket(Enumerations.SmpVersion.Version_1_0.ToString(),
-                Enumerations.SmpMessageType.GetMessage.ToString(), priority.ToString(), null, null);
+                Enumerations.SmpMessageType.GetMessage.ToString(), userID, password, priority.ToString(), null, null);
 
             //Send the packet
             MessageConsumer.SendSmpPacket(textBoxServerIPAddress.Text, 

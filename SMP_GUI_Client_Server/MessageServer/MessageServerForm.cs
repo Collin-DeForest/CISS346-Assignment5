@@ -57,7 +57,11 @@ namespace SMPServer
                 {
                     string messageType = eventArgs.SmpPacket.MessageType.ToString();
                     string messagePriority = eventArgs.SmpPacket.Priority;
+                    string messageUserID = eventArgs.SmpPacket.UserID;
+                    string messagePassword = eventArgs.SmpPacket.Password;
 
+                    textBoxUserID.Text = messageUserID;
+                    textBoxPassword.Text = messagePassword;
                     textBoxMessageType.Text = messageType;
                     textBoxMessagePriority.Text = messagePriority;
                 }
@@ -86,6 +90,8 @@ namespace SMPServer
                     string version = reader.ReadLine();
                     if (version == null) break;
 
+                    string userID = reader.ReadLine();
+                    string password = reader.ReadLine();
                     string priority = reader.ReadLine();
                     string dateTime = reader.ReadLine();
                     string message = reader.ReadLine();
@@ -95,6 +101,8 @@ namespace SMPServer
                     if (filterPriority == null || priority == filterPriority)
                     {
                         string record = "Version: " + version + Environment.NewLine;
+                        record += "User ID: " + userID + Environment.NewLine;
+                        record += "Password: " + password + Environment.NewLine;
                         record += "Priority: " + priority + Environment.NewLine;
                         record += "Date/Time: " + dateTime + Environment.NewLine;
                         record += "Message: " + message + Environment.NewLine;
