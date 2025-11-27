@@ -39,7 +39,6 @@ namespace SMPClientConsumer
             MessageConsumer.SendSmpPacket(textBoxServerIPAddress.Text, 
                 int.Parse(textBoxApplicationPortNumber.Text), smpPacket);
 
-            MessageBox.Show("Message retrieved...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void SMPClientConsumer_SMPResponsePacketRecieved(object sender, SMPResponsePacketEventArgs e)
@@ -57,7 +56,39 @@ namespace SMPClientConsumer
         {
             try
             {
-                textBoxMessageContent.Text = eventArgs.ResponseMessage;
+                if (eventArgs.ResponseMessage == "NO_MESSAGE_FOUND")
+                {
+                    string priority;
+
+                    //Get the message priority
+                    if (radioButtonPriorityLow.Checked == true)
+                    {
+                        priority = "low";
+                    }
+                    else if (radioButtonPriorityMedium.Checked == true)
+                    {
+                        priority = "Medium";
+                    }
+                    else
+                    {
+                        priority = "High";
+                    }
+
+                    MessageBox.Show("No Priority " + priority + " Messages Available", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxMessageContent.Text = "";
+
+                }
+                else if (eventArgs.ResponseMessage == "CONNECTION_ERROR")
+                {
+                    MessageBox.Show("Server is Offline", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxMessageContent.Text = "";
+                }
+                else
+                {
+                    // No issues, display the message
+                    MessageBox.Show("Message retrieved...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxMessageContent.Text = eventArgs.ResponseMessage;
+                }
             }
             catch (Exception ex)
             {

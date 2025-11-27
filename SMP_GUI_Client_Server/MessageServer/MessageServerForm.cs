@@ -90,7 +90,7 @@ namespace SMPServer
             using (StreamReader reader = new StreamReader("Messages.txt"))
             {
                 while (true)
-                {   
+                {
                     string version = reader.ReadLine();
                     if (version == null) break;
 
@@ -110,8 +110,12 @@ namespace SMPServer
                         textBoxMessages.AppendText(record + Environment.NewLine);
                     }
                 }
+
+                if (textBoxMessages.TextLength == 0)
+                {
+                    MessageBox.Show("No messages to display for this priority level.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
-
     }
 }

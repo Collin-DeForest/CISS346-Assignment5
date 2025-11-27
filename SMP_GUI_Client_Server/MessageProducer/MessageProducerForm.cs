@@ -42,7 +42,6 @@ namespace SMPClientProducer
             MessageProducer.SendSmpPacket(textBoxServerIPAddress.Text,
                 int.Parse(textBoxApplicationPortNumber.Text), smpPacket);
 
-            MessageBox.Show("Message sent...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void SMPClientProducer_SMPResponsePacketRecieved(object sender, SMPResponsePacketEventArgs e)
@@ -60,7 +59,15 @@ namespace SMPClientProducer
         {
             try
             {
-                textBoxServerResponse.Text = eventArgs.ResponseMessage;
+                if (eventArgs.ResponseMessage == "CONNECTION_ERROR")
+                {
+                    MessageBox.Show("Server is Offline", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Message sent...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxServerResponse.Text = eventArgs.ResponseMessage;
+                }
             }
             catch (Exception ex)
             {

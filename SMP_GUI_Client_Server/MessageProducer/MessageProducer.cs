@@ -12,23 +12,30 @@ namespace SMPClientProducer
 
         public static void SendSmpPacket(string serverIpAddress, int port, SmpPacket smpPacket)
         {
-            TcpClient client = new TcpClient(serverIpAddress, port);
-            NetworkStream networkStream = client.GetStream();
+            try
+            {
+                TcpClient client = new TcpClient(serverIpAddress, port);
+                NetworkStream networkStream = client.GetStream();
 
-            //Send the SMP packet
-            StreamWriter writer = new StreamWriter(networkStream);
-            writer.WriteLine(smpPacket);
-            writer.Flush();
+                //Send the SMP packet
+                StreamWriter writer = new StreamWriter(networkStream);
+                writer.WriteLine(smpPacket);
+                writer.Flush();
 
-            //Receive SMP Response from server
-            StreamReader reader = new StreamReader(networkStream);
-            string responsePacket = reader.ReadLine();
+                //Receive SMP Response from server
+                StreamReader reader = new StreamReader(networkStream);
+                string responsePacket = reader.ReadLine();
 
-            //Done with the server
-            reader.Close();
-            writer.Close();
+                //Done with the server
+                reader.Close();
+                writer.Close();
 
-            ProcessSmpResponsePacket(responsePacket);
+                ProcessSmpResponsePacket(responsePacket);
+            }
+            catch (Exception ex)
+            {
+                ProcessSmpResponsePacket("CONNECTION_ERROR");
+            }
         }
         private static void ProcessSmpResponsePacket(string responsePacket)
         {
