@@ -45,14 +45,16 @@ namespace SMPServer
             if (version == Enumerations.SmpVersion.Version_1_0.ToString())
             {
                 string messageType = networkStreamReader.ReadLine();
-
+                //Message Producer
                 if (messageType == Enumerations.SmpMessageType.PutMessage.ToString())
                 {
+                    string userID = networkStreamReader.ReadLine();
+                    string password = networkStreamReader.ReadLine();
                     string priority = networkStreamReader.ReadLine();
                     string dateTime = networkStreamReader.ReadLine();
                     string message = networkStreamReader.ReadLine();
 
-                    SmpPacket smpPacket = new SmpPacket(version, messageType, priority, dateTime, message);
+                    SmpPacket smpPacket = new SmpPacket(version, messageType, userID, password, priority, dateTime, message);
 
                     ProcessSmpPutPacket(smpPacket);
 
@@ -66,11 +68,14 @@ namespace SMPServer
 
                     if (PacketRecieved != null) PacketRecieved(null, eventArgs);
                 }
+                //Message Consumer
                 else if (messageType == Enumerations.SmpMessageType.GetMessage.ToString())
                 {
+                    string userID = networkStreamReader.ReadLine();
+                    string password = networkStreamReader.ReadLine();
                     string priority = networkStreamReader.ReadLine();
 
-                    SmpPacket smpPacket = ProcessSmpGetPacket(priority);
+                    SmpPacket smpPacket = ProcessSmpGetPacket(userID, password, priority);
                     string responsePacket = "";
                     if (smpPacket == null)
                     {
@@ -112,6 +117,8 @@ namespace SMPServer
                 if (smpPacket != null)
                 {
                     string record = smpPacket.Version + Environment.NewLine;
+                    record += smpPacket.UserID + Environment.NewLine;
+                    record += smpPacket.Password + Environment.NewLine;
                     record += smpPacket.Priority + Environment.NewLine;
                     record += smpPacket.DateTime + Environment.NewLine;
                     record += smpPacket.Message + Environment.NewLine;
@@ -130,7 +137,7 @@ namespace SMPServer
             }
         }
 
-        private static SmpPacket ProcessSmpGetPacket(string requestedPriority)
+        private static SmpPacket ProcessSmpGetPacket(string requestorsUserID, string requestorsPassword, string requestedPriority)
         {
             try
             {
@@ -153,32 +160,36 @@ namespace SMPServer
                     }
 
                     //4 lines for a packet
-                    if (i + 3 >= lines.Count)
+                    if (i + 5 >= lines.Count)
                         break;
 
                     string version = lines[i];
-                    string priority = lines[i + 1];
-                    string date = lines[i + 2];
-                    string message = lines[i + 3];
+                    string userID = lines[i + 1];
+                    string password = lines[i + 2];
+                    string priority = lines[i + 3];
+                    string date = lines[i + 4];
+                    string message = lines[i + 5];
 
-                    bool match = (foundPacket == null && priority == requestedPriority);
+                    bool match = (foundPacket == null && priority == requestedPriority && userID == requestorsUserID && password == requestorsPassword);
 
                     if (match)
                     {
                         // Build packet to return
-                        foundPacket = new SmpPacket(version, Enumerations.SmpMessageType.GetMessage.ToString(), priority, date, message);
+                        foundPacket = new SmpPacket(version, Enumerations.SmpMessageType.GetMessage.ToString(), userID, password, priority, date, message);
                     }
                     else
                     {
                         // Keep other packets
                         remaining.Add(version);
+                        remaining.Add(userID);
+                        remaining.Add(password);
                         remaining.Add(priority);
                         remaining.Add(date);
                         remaining.Add(message);
                         remaining.Add("");
                     }
 
-                    i += 4; // move to next packet
+                    i += 6; // move to next packet
                 }
 
                 // Rewrite file

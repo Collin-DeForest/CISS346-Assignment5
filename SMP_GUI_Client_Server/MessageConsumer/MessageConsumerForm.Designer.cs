@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxUserID = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxApplicationPortNumber = new System.Windows.Forms.TextBox();
@@ -41,10 +45,6 @@
             this.radioButtonPriorityHigh = new System.Windows.Forms.RadioButton();
             this.radioButtonPriorityMedium = new System.Windows.Forms.RadioButton();
             this.radioButtonPriorityLow = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -52,8 +52,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxPassword);
+            this.groupBox1.Controls.Add(this.textBoxUserID);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -68,6 +68,38 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(376, 69);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(189, 22);
+            this.textBoxPassword.TabIndex = 8;
+            // 
+            // textBoxUserID
+            // 
+            this.textBoxUserID.Location = new System.Drawing.Point(142, 72);
+            this.textBoxUserID.Name = "textBoxUserID";
+            this.textBoxUserID.Size = new System.Drawing.Size(144, 22);
+            this.textBoxUserID.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(303, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "User ID";
             // 
             // label2
             // 
@@ -201,38 +233,6 @@
             this.radioButtonPriorityLow.Text = "Low";
             this.radioButtonPriorityLow.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "User ID";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(303, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(142, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 22);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(376, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 22);
-            this.textBox2.TabIndex = 8;
-            // 
             // MessageConsumerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -273,8 +273,8 @@
         private System.Windows.Forms.RadioButton radioButtonPriorityLow;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxUserID;
     }
 }
 

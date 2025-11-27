@@ -44,13 +44,13 @@
             this.textBoxPortNumber = new System.Windows.Forms.TextBox();
             this.textBoxServerIPAddress = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxUserID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMessagePriority = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -230,8 +230,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.textBoxPassword);
+            this.groupBox4.Controls.Add(this.textBoxUserID);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label4);
@@ -246,6 +246,38 @@
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Last Received Message";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(373, 38);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(118, 22);
+            this.textBoxPassword.TabIndex = 16;
+            // 
+            // textBoxUserID
+            // 
+            this.textBoxUserID.Location = new System.Drawing.Point(127, 38);
+            this.textBoxUserID.Name = "textBoxUserID";
+            this.textBoxUserID.Size = new System.Drawing.Size(112, 22);
+            this.textBoxUserID.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(245, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "User Password";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "User ID";
             // 
             // label4
             // 
@@ -275,38 +307,6 @@
             this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Message Type";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "User ID";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(245, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "User Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(127, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 22);
-            this.textBox1.TabIndex = 15;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(373, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 22);
-            this.textBox2.TabIndex = 16;
             // 
             // FormSmpServer
             // 
@@ -355,8 +355,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxMessagePriority;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxUserID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
     }
