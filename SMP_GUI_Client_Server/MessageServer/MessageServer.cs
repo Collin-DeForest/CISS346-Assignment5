@@ -76,11 +76,18 @@ namespace SMPServer
                     string priority = networkStreamReader.ReadLine();
 
                     SmpPacket smpPacket = ProcessSmpGetPacket(userID, password, priority);
-
+                    string responsePacket = "";
+                    if (smpPacket == null)
+                    {
+                        responsePacket = "No Message Available" + Environment.NewLine;
+                        SendSmpResponsePacket(responsePacket, networkStream);
+                        networkStreamReader.Close();
+                        return;
+                    }
                     string record = smpPacket.DateTime + Environment.NewLine;
                     record += smpPacket.Message + Environment.NewLine;
 
-                    string responsePacket = "Message Information: " + Environment.NewLine + record;
+                    responsePacket = "Message Information: " + Environment.NewLine + record;
 
                     SendSmpResponsePacket(responsePacket, networkStream);
 
@@ -134,6 +141,10 @@ namespace SMPServer
         {
             try
             {
+                if (!File.Exists("Messages.txt"))
+                {
+                    return null;
+                }
                 var lines = File.ReadAllLines("Messages.txt").ToList();
                 var remaining = new List<string>();
 
