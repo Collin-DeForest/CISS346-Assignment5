@@ -79,10 +79,18 @@ namespace SMPServer
             else if (radioButtonPriorityHigh.Checked) filterPriority = "3";
             else if (radioAll.Checked) filterPriority = null; // Show all
 
+            // check if file exists
+            string fileName = "Messages.txt";
+            if (File.Exists(fileName) == false)
+            {
+                MessageBox.Show("No messages to display.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             using (StreamReader reader = new StreamReader("Messages.txt"))
             {
                 while (true)
-                {
+                {   
                     string version = reader.ReadLine();
                     if (version == null) break;
 
