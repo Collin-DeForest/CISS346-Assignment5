@@ -81,6 +81,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\01_RSA_Encryption\Cryptography\CryptographyUtilities.csproj">
+      <Project>{9b157f7f-77f5-4795-af13-31776fb6769e}</Project>
+      <Name>CryptographyUtilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SMP_Library\SMP_Library.csproj">
       <Project>{cd0327a4-9533-4462-ba57-aac3afd75fa2}</Project>
       <Name>SMP_Library</Name>
