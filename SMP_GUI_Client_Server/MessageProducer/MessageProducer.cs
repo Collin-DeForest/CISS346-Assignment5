@@ -3,7 +3,6 @@ using System.IO;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using SMP_Library;
-using CryptographyUtilities;
 
 namespace SMPClientProducer
 {
@@ -11,19 +10,16 @@ namespace SMPClientProducer
     {
         public static event EventHandler<SMPResponsePacketEventArgs> SMPResponsePacketRecieved;
 
-        public static void SendSmpPacket(string serverIpAddress, int port, SmpPacket smpPacket, string publicKey)
+        public static void SendSmpPacket(string serverIpAddress, int port, SmpPacket smpPacket)
         {
             try
             {
-                string encypted = Encryption.EncryptMessage(smpPacket.Message, publicKey);
-				// create new packet with encrypted message
-				SmpPacket encrypted = new SmpPacket(smpPacket.Version, smpPacket.MessageType, smpPacket.UserID, smpPacket.Password, smpPacket.Priority, smpPacket.DateTime, encypted);
-				TcpClient client = new TcpClient(serverIpAddress, port);
+                TcpClient client = new TcpClient(serverIpAddress, port);
                 NetworkStream networkStream = client.GetStream();
 
                 //Send the SMP packet
                 StreamWriter writer = new StreamWriter(networkStream);
-                writer.WriteLine(encrypted);
+                writer.WriteLine(smpPacket);
                 writer.Flush();
 
                 //Receive SMP Response from server

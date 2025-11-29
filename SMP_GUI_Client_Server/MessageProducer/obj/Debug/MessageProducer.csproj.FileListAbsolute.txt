@@ -42,19 +42,3 @@ C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assi
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\MessageP.9BD23C3F.Up2Date
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.exe
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMPClientProducer.exe.config
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMPClientProducer.exe
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMPClientProducer.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMP_Library.dll
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMP_Library.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\SMP_Library.dll.config
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\MessageProducer.csproj.AssemblyReference.cache
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.MessageProducerForm.resources
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.Properties.Resources.resources
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\MessageProducer.csproj.GenerateResource.cache
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\MessageProducer.csproj.CoreCompileInputs.cache
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\MessageP.9BD23C3F.Up2Date
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.exe
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\obj\Debug\SMPClientProducer.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\Cryptography.dll
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageProducer\bin\Debug\Cryptography.pdb

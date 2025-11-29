@@ -1,8 +1,6 @@
-﻿using System;
-using SMP_Library;
-using System.IO;
+﻿using SMP_Library;
+using System;
 using System.Windows.Forms;
-using CryptographyUtilities;
 
 namespace SMPClientProducer
 {
@@ -13,28 +11,9 @@ namespace SMPClientProducer
             InitializeComponent();
 
             MessageProducer.SMPResponsePacketRecieved += SMPClientProducer_SMPResponsePacketRecieved;
-
-            GenerateKeys();
         }
 
-        private void GenerateKeys()
-        {
-            string publicKey = "Public.key";
-            string privateKey = "Private.key";
-            if (!File.Exists(publicKey) || !File.Exists(privateKey))
-            {
-                try
-                {
-                    Encryption.GeneratePublicPrivateKeyPair(publicKey, privateKey);
-                }
-                catch (Exception ex)
-                {
-                    ExceptionLogger.LogExeption(ex);
-                }
-            }
-        }
-
-		private void buttonSendMessage_Click(object sender, EventArgs e)
+        private void buttonSendMessage_Click(object sender, EventArgs e)
         {
             int priority;
 
@@ -61,10 +40,9 @@ namespace SMPClientProducer
                 Enumerations.SmpMessageType.PutMessage.ToString(), userID, password, priority.ToString(), DateTime.Now.ToString(),
                 message);
 
-
             //Send the packet
             MessageProducer.SendSmpPacket(textBoxServerIPAddress.Text,
-                int.Parse(textBoxApplicationPortNumber.Text), smpPacket, "Public.key");
+                int.Parse(textBoxApplicationPortNumber.Text), smpPacket);
 
         }
 

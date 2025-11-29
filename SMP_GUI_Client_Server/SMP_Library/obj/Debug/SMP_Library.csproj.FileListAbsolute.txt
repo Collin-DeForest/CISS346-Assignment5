@@ -19,10 +19,3 @@ C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assi
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.csproj.CoreCompileInputs.cache
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.dll
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\bin\Debug\SMP_Library.dll.config
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\bin\Debug\SMP_Library.dll
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\bin\Debug\SMP_Library.pdb
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.csproj.AssemblyReference.cache
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.csproj.CoreCompileInputs.cache
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.dll
-C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\SMP_Library\obj\Debug\SMP_Library.pdb
