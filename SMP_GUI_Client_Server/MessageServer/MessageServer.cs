@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Windows.Forms;
+using CryptographyUtilities;
 
 namespace SMPServer
 {
@@ -54,7 +56,9 @@ namespace SMPServer
                     string dateTime = networkStreamReader.ReadLine();
                     string message = networkStreamReader.ReadLine();
 
-                    SmpPacket smpPacket = new SmpPacket(version, messageType, userID, password, priority, dateTime, message);
+                    string decrypted = Decrypt(message);
+
+                    SmpPacket smpPacket = new SmpPacket(version, messageType, userID, password, priority, dateTime, decrypted);
 
                     ProcessSmpPutPacket(smpPacket);
 
@@ -84,8 +88,9 @@ namespace SMPServer
                         networkStreamReader.Close();
                         return;
                     }
+                    string encrypted = Encrypt(smpPacket.Message);
                     string record = smpPacket.DateTime + Environment.NewLine;
-                    record += smpPacket.Message + Environment.NewLine;
+                    record += encrypted + Environment.NewLine;
 
                     responsePacket = "Message Information: " + Environment.NewLine + record;
 
@@ -110,7 +115,46 @@ namespace SMPServer
             }
         }
 
-        private static void ProcessSmpPutPacket(SmpPacket smpPacket)
+        private static string Encrypt(string message)
+        {
+            try
+            {
+                // we only produce the keys in the producer
+                string producerKeyFolder = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\..\MessageProducer\bin\Debug\"));
+                string publicKeyPath = Path.Combine(producerKeyFolder, "Private.key");
+                if (File.Exists(publicKeyPath)) {
+                    return Encryption.EncryptMessage(message, publicKeyPath);
+                }
+                return message;
+            } catch (Exception ex)
+            {
+                ExceptionLogger.LogExeption(ex);
+                return message;
+            }
+        }
+
+		private static string Decrypt(string message)
+		{
+			try
+			{
+				// we only produce the keys in the producer
+				string producerKeyFolder = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\..\MessageProducer\bin\Debug\"));
+				string privateKeyPath = Path.Combine(producerKeyFolder, "Private.key");
+				if (File.Exists(privateKeyPath))
+				{
+					return Encryption.DecryptMessage(message, privateKeyPath);
+				}
+				return message;
+			}
+			catch (Exception ex)
+			{
+				ExceptionLogger.LogExeption(ex);
+				return message;
+			}
+		}
+
+
+		private static void ProcessSmpPutPacket(SmpPacket smpPacket)
         {
             try
             {
