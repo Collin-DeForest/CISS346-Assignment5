@@ -36,7 +36,7 @@ namespace SMPClientConsumer
 			string password = textBoxPassword.Text;
 
 			//Build the SMP packet
-			SmpPacket smpPacket = new SmpPacket(Enumerations.SmpVersion.Version_1_0.ToString(),
+			SmpPacket smpPacket = new SmpPacket(Enumerations.SmpVersion.Version_2_0.ToString(),
 				Enumerations.SmpMessageType.GetMessage.ToString(), userID, password, priority.ToString(), null, null);
 
 

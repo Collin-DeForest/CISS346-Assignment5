@@ -58,3 +58,5 @@ C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsu
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageC.EBF22B66.Up2Date
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.exe
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\Cryptography.dll
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\Cryptography.pdb
