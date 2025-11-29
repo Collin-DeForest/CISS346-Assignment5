@@ -3,45 +3,49 @@ using System.IO;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using SMP_Library;
+using CryptographyUtilities;
 
 namespace SMPClientProducer
 {
-    internal class MessageProducer
-    {
-        public static event EventHandler<SMPResponsePacketEventArgs> SMPResponsePacketRecieved;
+	internal class MessageProducer
+	{
+		public static event EventHandler<SMPResponsePacketEventArgs> SMPResponsePacketRecieved;
 
-        public static void SendSmpPacket(string serverIpAddress, int port, SmpPacket smpPacket)
-        {
-            try
-            {
-                TcpClient client = new TcpClient(serverIpAddress, port);
-                NetworkStream networkStream = client.GetStream();
+		public static void SendSmpPacket(string serverIpAddress, int port, SmpPacket smpPacket, string publicKey)
+		{
+			try
+			{
+				string encrypted = Encryption.EncryptMessage(smpPacket.Message, publicKey);
+				// create new packet with encrypted message
+				SmpPacket encryptedPacket = new SmpPacket(smpPacket.Version, smpPacket.MessageType, smpPacket.UserID, smpPacket.Password, smpPacket.Priority, smpPacket.DateTime, encrypted);
+				TcpClient client = new TcpClient(serverIpAddress, port);
+				NetworkStream networkStream = client.GetStream();
 
-                //Send the SMP packet
-                StreamWriter writer = new StreamWriter(networkStream);
-                writer.WriteLine(smpPacket);
-                writer.Flush();
+				//Send the SMP packet
+				StreamWriter writer = new StreamWriter(networkStream);
+				writer.WriteLine(encryptedPacket);
+				writer.Flush();
 
-                //Receive SMP Response from server
-                StreamReader reader = new StreamReader(networkStream);
-                string responsePacket = reader.ReadLine();
+				//Receive SMP Response from server
+				StreamReader reader = new StreamReader(networkStream);
+				string responsePacket = reader.ReadLine();
 
-                //Done with the server
-                reader.Close();
-                writer.Close();
+				//Done with the server
+				reader.Close();
+				writer.Close();
 
-                ProcessSmpResponsePacket(responsePacket);
-            }
-            catch (Exception ex)
-            {
-                ProcessSmpResponsePacket("CONNECTION_ERROR");
-            }
-        }
-        private static void ProcessSmpResponsePacket(string responsePacket)
-        {
-            SMPResponsePacketEventArgs eventArgs = new SMPResponsePacketEventArgs(responsePacket);
+				ProcessSmpResponsePacket(responsePacket);
+			}
+			catch (Exception ex)
+			{
+				ProcessSmpResponsePacket("CONNECTION_ERROR");
+			}
+		}
+		private static void ProcessSmpResponsePacket(string responsePacket)
+		{
+			SMPResponsePacketEventArgs eventArgs = new SMPResponsePacketEventArgs(responsePacket);
 
-            if (SMPResponsePacketRecieved != null) SMPResponsePacketRecieved(null, eventArgs);
-        }
-    }
+			if (SMPResponsePacketRecieved != null) SMPResponsePacketRecieved(null, eventArgs);
+		}
+	}
 }
