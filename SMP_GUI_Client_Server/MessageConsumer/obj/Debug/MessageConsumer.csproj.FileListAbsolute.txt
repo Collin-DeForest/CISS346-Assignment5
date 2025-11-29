@@ -42,3 +42,19 @@ C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assi
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageC.EBF22B66.Up2Date
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.exe
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.pdb
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMPClientConsumer.exe.config
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMPClientConsumer.exe
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMPClientConsumer.pdb
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMP_Library.dll
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMP_Library.pdb
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\SMP_Library.dll.config
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageConsumer.csproj.AssemblyReference.cache
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.MessageConsumerForm.resources
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.Properties.Resources.resources
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageConsumer.csproj.GenerateResource.cache
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageConsumer.csproj.CoreCompileInputs.cache
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\MessageC.EBF22B66.Up2Date
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.exe
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\obj\Debug\SMPClientConsumer.pdb
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\Cryptography.dll
+C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageConsumer\bin\Debug\Cryptography.pdb

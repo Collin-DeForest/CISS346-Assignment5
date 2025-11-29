@@ -1,6 +1,8 @@
-﻿using SMP_Library;
-using System;
+﻿using System;
+using System.IO;
 using System.Windows.Forms;
+using CryptographyUtilities;
+using SMP_Library;
 
 namespace SMPClientConsumer
 {
@@ -11,9 +13,28 @@ namespace SMPClientConsumer
             InitializeComponent();
 
             MessageConsumer.SMPResponsePacketRecieved += SMPClientConsumer_SMPResponsePacketRecieved;
-        }
 
-        private void buttonGetMessage_Click(object sender, EventArgs e)
+            GenerateKeys();
+		}
+
+		private void GenerateKeys()
+		{
+			string publicKey = "Public.key";
+			string privateKey = "Private.key";
+			if (!File.Exists(publicKey) || !File.Exists(privateKey))
+			{
+				try
+				{
+					Encryption.GeneratePublicPrivateKeyPair(publicKey, privateKey);
+				}
+				catch (Exception ex)
+				{
+					ExceptionLogger.LogExeption(ex);
+				}
+			}
+		}
+
+		private void buttonGetMessage_Click(object sender, EventArgs e)
         {
             int priority;
 
@@ -39,7 +60,7 @@ namespace SMPClientConsumer
 
             //Send the packet
             MessageConsumer.SendSmpPacket(textBoxServerIPAddress.Text, 
-                int.Parse(textBoxApplicationPortNumber.Text), smpPacket);
+                int.Parse(textBoxApplicationPortNumber.Text), smpPacket, "Private.key");
 
         }
 
