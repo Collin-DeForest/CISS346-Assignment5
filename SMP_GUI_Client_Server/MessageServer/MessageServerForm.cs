@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using CryptographyUtilities;
 
 namespace SMPServer
 {
@@ -105,6 +106,8 @@ namespace SMPServer
                     string message = reader.ReadLine();
                     string empty = reader.ReadLine();
 
+                    string decrypted = Decrypt(message);
+
                     // Filter by priority and create text
                     if (filterPriority == null || priority == filterPriority)
                     {
@@ -113,7 +116,7 @@ namespace SMPServer
                         record += "Password: " + password + Environment.NewLine;
                         record += "Priority: " + priority + Environment.NewLine;
                         record += "Date/Time: " + dateTime + Environment.NewLine;
-                        record += "Message: " + message + Environment.NewLine;
+                        record += "Message: " + decrypted + Environment.NewLine;
 
                         textBoxMessages.AppendText(record + Environment.NewLine);
                     }
@@ -123,6 +126,27 @@ namespace SMPServer
                 {
                     MessageBox.Show("No messages to display for this priority level.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+        }
+        private string Decrypt(string message)
+        {
+            try
+            {
+                string producerKeyFolder = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\..\MessageProducer\bin\Debug\"));
+                string privateKeyPath = Path.Combine(producerKeyFolder, "Private.key");
+                if (File.Exists(privateKeyPath))
+                {
+                    return Encryption.DecryptMessage(message, privateKeyPath);
+                }
+                else
+                {
+                    return message;
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogExeption(ex);
+                return message;
             }
         }
     }
