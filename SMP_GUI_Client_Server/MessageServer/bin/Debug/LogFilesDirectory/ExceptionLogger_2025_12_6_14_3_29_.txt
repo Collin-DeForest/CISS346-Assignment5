@@ -1,0 +1,13 @@
+Date/Time: 12/6/2025 2:03:29 PM
+Assembly: SMPServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Operating System: Microsoft Windows NT 6.2.9200.0
+Working Set: 40247296
+Message: Invalid length for a Base-64 char array or string.
+Source: mscorlib
+Exception Stack Trace: 
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CryptographyUtilities.Encryption.DecryptMessage(String encryptedMessage, String privateKeyFile) in C:\Users\Ben\source\repos\CISS346-Assignment5\01_RSA_Encryption\Cryptography\Encryption.cs:line 33
+   at SMPServer.FormSmpServer.Decrypt(String message) in C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\MessageServerForm.cs:line 139
+
