@@ -28,61 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxMessages = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxRegistrations = new System.Windows.Forms.TextBox();
+            this.radioButtonUserID = new System.Windows.Forms.RadioButton();
+            this.radioButtonUserIDPass = new System.Windows.Forms.RadioButton();
+            this.buttonShowRegistrations = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBoxMessages
+            // textBoxRegistrations
             // 
-            this.textBoxMessages.Location = new System.Drawing.Point(12, 11);
-            this.textBoxMessages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxMessages.Multiline = true;
-            this.textBoxMessages.Name = "textBoxMessages";
-            this.textBoxMessages.Size = new System.Drawing.Size(333, 269);
-            this.textBoxMessages.TabIndex = 7;
+            this.textBoxRegistrations.Location = new System.Drawing.Point(12, 11);
+            this.textBoxRegistrations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRegistrations.Multiline = true;
+            this.textBoxRegistrations.Name = "textBoxRegistrations";
+            this.textBoxRegistrations.Size = new System.Drawing.Size(333, 269);
+            this.textBoxRegistrations.TabIndex = 7;
             // 
-            // radioButton1
+            // radioButtonUserID
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(37, 300);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(80, 20);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "User IDs";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonUserID.AutoSize = true;
+            this.radioButtonUserID.Location = new System.Drawing.Point(37, 300);
+            this.radioButtonUserID.Name = "radioButtonUserID";
+            this.radioButtonUserID.Size = new System.Drawing.Size(80, 20);
+            this.radioButtonUserID.TabIndex = 8;
+            this.radioButtonUserID.TabStop = true;
+            this.radioButtonUserID.Text = "User IDs";
+            this.radioButtonUserID.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonUserIDPass
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(169, 300);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(176, 20);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "User IDs and Passwords";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonUserIDPass.AutoSize = true;
+            this.radioButtonUserIDPass.Location = new System.Drawing.Point(169, 300);
+            this.radioButtonUserIDPass.Name = "radioButtonUserIDPass";
+            this.radioButtonUserIDPass.Size = new System.Drawing.Size(176, 20);
+            this.radioButtonUserIDPass.TabIndex = 9;
+            this.radioButtonUserIDPass.TabStop = true;
+            this.radioButtonUserIDPass.Text = "User IDs and Passwords";
+            this.radioButtonUserIDPass.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonShowRegistrations
             // 
-            this.button1.Location = new System.Drawing.Point(63, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Show Registrations";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonShowRegistrations.Location = new System.Drawing.Point(63, 326);
+            this.buttonShowRegistrations.Name = "buttonShowRegistrations";
+            this.buttonShowRegistrations.Size = new System.Drawing.Size(223, 29);
+            this.buttonShowRegistrations.TabIndex = 10;
+            this.buttonShowRegistrations.Text = "Show Registrations";
+            this.buttonShowRegistrations.UseVisualStyleBackColor = true;
+            this.buttonShowRegistrations.Click += new System.EventHandler(this.button1_Click);
             // 
             // Registrations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBoxMessages);
+            this.Controls.Add(this.buttonShowRegistrations);
+            this.Controls.Add(this.radioButtonUserIDPass);
+            this.Controls.Add(this.radioButtonUserID);
+            this.Controls.Add(this.textBoxRegistrations);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Registrations";
@@ -95,9 +96,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxMessages;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxRegistrations;
+        private System.Windows.Forms.RadioButton radioButtonUserID;
+        private System.Windows.Forms.RadioButton radioButtonUserIDPass;
+        private System.Windows.Forms.Button buttonShowRegistrations;
     }
 }

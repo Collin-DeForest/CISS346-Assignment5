@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using CryptographyUtilities;
 
 namespace SMPServer
 {
@@ -12,12 +13,36 @@ namespace SMPServer
     {
         public static event EventHandler<PacketEventArgs> PacketRecieved;
 
+        private static void createKeys()
+        {
+            string publicKeyPath = "ServerPublic.key";
+            string privateKeyPath = "ServerPrivate.key";
+
+            // If both exist, do nothing
+            if (File.Exists(publicKeyPath) && File.Exists(privateKeyPath))
+                return;
+
+            // Otherwise generate a new pair
+            try
+            {
+                Encryption.GeneratePublicPrivateKeyPair(publicKeyPath, privateKeyPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error generating keypair: " + ex.Message);
+            }
+        }
+
+
         public static void Start(object o)
         {
             FormSmpServer form = o as FormSmpServer;
 
             if (form != null)
             {
+
+                createKeys();
+
                 IPAddress iPAddress = IPAddress.Parse(form.IpAddress);
                 int port = form.Port;
 
@@ -98,6 +123,33 @@ namespace SMPServer
 
 
                     if (PacketRecieved != null) PacketRecieved(null, eventArgs);
+                }
+                else if(messageType == Enumerations.SmpMessageType.RegisterClient.ToString())
+                {
+                    string userID = Encryption.DecryptMessage(networkStreamReader.ReadLine(), "ServerPrivate.key");
+                    //string password = Encryption.DecryptMessage(networkStreamReader.ReadLine(), "ServerPrivate.key");
+                    string password = networkStreamReader.ReadLine();
+                    // Registration logic
+                    try
+                    {
+                        string filePath = "RegisteredClients.txt";
+
+                        using (StreamWriter writer = new StreamWriter(filePath, append: true))
+                        {
+                            writer.WriteLine($"User ID: {userID}");
+                            writer.WriteLine($"Password: {password}");
+                            writer.WriteLine(); // blank line to separate entries
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error saving client credentials: " + ex.Message);
+                    }
+
+                    string responsePacket = "Registered Client";
+                    SendSmpResponsePacket(responsePacket, networkStream);
+
+                    networkStreamReader.Close();
                 }
             }
             else

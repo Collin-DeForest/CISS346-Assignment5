@@ -32,15 +32,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxApplicationPortNumber = new System.Windows.Forms.TextBox();
-            this.textBoxServerIPAddress = new System.Windows.Forms.TextBox();
+            this.textBoxRegistrationPortNumber = new System.Windows.Forms.TextBox();
+            this.textBoxServerIPRegistration = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonRegister = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxRegistrationPassword = new System.Windows.Forms.TextBox();
             this.textBoxRegistrationID = new System.Windows.Forms.TextBox();
-            this.buttonRegister = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -50,8 +50,8 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxApplicationPortNumber);
-            this.groupBox1.Controls.Add(this.textBoxServerIPAddress);
+            this.groupBox1.Controls.Add(this.textBoxRegistrationPortNumber);
+            this.groupBox1.Controls.Add(this.textBoxServerIPRegistration);
             this.groupBox1.Location = new System.Drawing.Point(12, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -87,25 +87,25 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Server IP Address";
             // 
-            // textBoxApplicationPortNumber
+            // textBoxRegistrationPortNumber
             // 
-            this.textBoxApplicationPortNumber.Location = new System.Drawing.Point(386, 29);
-            this.textBoxApplicationPortNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxApplicationPortNumber.Name = "textBoxApplicationPortNumber";
-            this.textBoxApplicationPortNumber.Size = new System.Drawing.Size(80, 22);
-            this.textBoxApplicationPortNumber.TabIndex = 1;
-            this.textBoxApplicationPortNumber.Text = "50400";
-            this.textBoxApplicationPortNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRegistrationPortNumber.Location = new System.Drawing.Point(386, 29);
+            this.textBoxRegistrationPortNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRegistrationPortNumber.Name = "textBoxRegistrationPortNumber";
+            this.textBoxRegistrationPortNumber.Size = new System.Drawing.Size(80, 22);
+            this.textBoxRegistrationPortNumber.TabIndex = 1;
+            this.textBoxRegistrationPortNumber.Text = "50400";
+            this.textBoxRegistrationPortNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBoxServerIPAddress
+            // textBoxServerIPRegistration
             // 
-            this.textBoxServerIPAddress.Location = new System.Drawing.Point(137, 29);
-            this.textBoxServerIPAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxServerIPAddress.Name = "textBoxServerIPAddress";
-            this.textBoxServerIPAddress.Size = new System.Drawing.Size(144, 22);
-            this.textBoxServerIPAddress.TabIndex = 0;
-            this.textBoxServerIPAddress.Text = "127.0.0.1";
-            this.textBoxServerIPAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxServerIPRegistration.Location = new System.Drawing.Point(137, 29);
+            this.textBoxServerIPRegistration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxServerIPRegistration.Name = "textBoxServerIPRegistration";
+            this.textBoxServerIPRegistration.Size = new System.Drawing.Size(144, 22);
+            this.textBoxServerIPRegistration.TabIndex = 0;
+            this.textBoxServerIPRegistration.Text = "127.0.0.1";
+            this.textBoxServerIPRegistration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
@@ -123,6 +123,16 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registration";
+            // 
+            // buttonRegister
+            // 
+            this.buttonRegister.Location = new System.Drawing.Point(100, 101);
+            this.buttonRegister.Name = "buttonRegister";
+            this.buttonRegister.Size = new System.Drawing.Size(298, 38);
+            this.buttonRegister.TabIndex = 5;
+            this.buttonRegister.Text = "Register";
+            this.buttonRegister.UseVisualStyleBackColor = true;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // label3
             // 
@@ -168,15 +178,6 @@
             this.textBoxRegistrationID.TabIndex = 0;
             this.textBoxRegistrationID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // buttonRegister
-            // 
-            this.buttonRegister.Location = new System.Drawing.Point(100, 101);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(298, 38);
-            this.buttonRegister.TabIndex = 5;
-            this.buttonRegister.Text = "Register";
-            this.buttonRegister.UseVisualStyleBackColor = true;
-            // 
             // ClientRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -203,8 +204,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxApplicationPortNumber;
-        private System.Windows.Forms.TextBox textBoxServerIPAddress;
+        private System.Windows.Forms.TextBox textBoxRegistrationPortNumber;
+        private System.Windows.Forms.TextBox textBoxServerIPRegistration;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

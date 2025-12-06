@@ -22,6 +22,14 @@ namespace SMP_Library
             DateTime = dateTime;
             Message = message;
         }
+        public SmpPacket(string version, string messageType, string userID, string password)
+        {
+            Version = version;
+            UserID = userID;
+            Password = password;
+            MessageType = messageType;
+
+        }
 
         public override string ToString()
         {
