@@ -51,6 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxMessagePriority = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonRegistration = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -73,7 +74,7 @@
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.textBoxMessages);
             this.groupBox1.Controls.Add(this.buttonShowMessages);
-            this.groupBox1.Location = new System.Drawing.Point(11, 235);
+            this.groupBox1.Location = new System.Drawing.Point(20, 277);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -185,7 +186,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(353, 93);
+            this.groupBox2.Size = new System.Drawing.Size(353, 142);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Settings";
@@ -238,7 +239,7 @@
             this.groupBox4.Controls.Add(this.textBoxMessagePriority);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.textBoxMessageType);
-            this.groupBox4.Location = new System.Drawing.Point(11, 115);
+            this.groupBox4.Location = new System.Drawing.Point(20, 157);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -308,11 +309,22 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Message Type";
             // 
+            // buttonRegistration
+            // 
+            this.buttonRegistration.Location = new System.Drawing.Point(20, 120);
+            this.buttonRegistration.Name = "buttonRegistration";
+            this.buttonRegistration.Size = new System.Drawing.Size(131, 32);
+            this.buttonRegistration.TabIndex = 13;
+            this.buttonRegistration.Text = "Registrations";
+            this.buttonRegistration.UseVisualStyleBackColor = true;
+            this.buttonRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
+            // 
             // FormSmpServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 528);
+            this.ClientSize = new System.Drawing.Size(542, 580);
+            this.Controls.Add(this.buttonRegistration);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -359,6 +371,7 @@
         private System.Windows.Forms.TextBox textBoxUserID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonRegistration;
     }
 }
 

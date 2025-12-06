@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRegistrationForm.Designer.cs">
+      <DependentUpon>ClientRegistrationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MessageProducerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MessageProducer.cs" />
+    <EmbeddedResource Include="ClientRegistrationForm.resx">
+      <DependentUpon>ClientRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageProducerForm.resx">
       <DependentUpon>MessageProducerForm.cs</DependentUpon>
     </EmbeddedResource>

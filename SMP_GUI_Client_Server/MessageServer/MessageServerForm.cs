@@ -149,5 +149,11 @@ namespace SMPServer
                 return message;
             }
         }
+
+        private void buttonRegistration_Click(object sender, EventArgs e)
+        {
+            Registrations regForm = new Registrations();
+            regForm.ShowDialog();
+        }
     }
 }

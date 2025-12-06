@@ -56,3 +56,6 @@ C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServe
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\MessageS.41553B42.Up2Date
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.exe
 C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.dll
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.pdb
+C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.Registrations.resources
