@@ -47,6 +47,7 @@
             this.radioButtonPriorityLow = new System.Windows.Forms.RadioButton();
             this.textBoxServerResponse = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonOpenRegistration = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,7 +148,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.textBoxMessageContent);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(11, 154);
+            this.groupBox2.Location = new System.Drawing.Point(11, 218);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,7 +238,7 @@
             // 
             // textBoxServerResponse
             // 
-            this.textBoxServerResponse.Location = new System.Drawing.Point(181, 441);
+            this.textBoxServerResponse.Location = new System.Drawing.Point(181, 505);
             this.textBoxServerResponse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxServerResponse.Multiline = true;
             this.textBoxServerResponse.Name = "textBoxServerResponse";
@@ -247,17 +248,28 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 443);
+            this.label4.Location = new System.Drawing.Point(13, 507);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Server Response";
             // 
+            // buttonOpenRegistration
+            // 
+            this.buttonOpenRegistration.Location = new System.Drawing.Point(210, 135);
+            this.buttonOpenRegistration.Name = "buttonOpenRegistration";
+            this.buttonOpenRegistration.Size = new System.Drawing.Size(186, 82);
+            this.buttonOpenRegistration.TabIndex = 7;
+            this.buttonOpenRegistration.Text = "Register Credentials";
+            this.buttonOpenRegistration.UseVisualStyleBackColor = true;
+            this.buttonOpenRegistration.Click += new System.EventHandler(this.buttonOpenRegistration_Click);
+            // 
             // MessageProducerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 503);
+            this.ClientSize = new System.Drawing.Size(636, 556);
+            this.Controls.Add(this.buttonOpenRegistration);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxServerResponse);
             this.Controls.Add(this.groupBox2);
@@ -300,6 +312,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox passwordButton;
         private System.Windows.Forms.TextBox userIDButton;
+        private System.Windows.Forms.Button buttonOpenRegistration;
     }
 }
 

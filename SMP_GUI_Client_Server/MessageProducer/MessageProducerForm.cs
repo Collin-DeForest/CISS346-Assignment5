@@ -97,5 +97,11 @@ namespace SMPClientProducer
 				ExceptionLogger.LogExeption(ex);
 			}
 		}
-	}
+
+        private void buttonOpenRegistration_Click(object sender, EventArgs e)
+        {
+            ClientRegistrationForm regForm = new ClientRegistrationForm();
+            regForm.ShowDialog();
+        }
+    }
 }
