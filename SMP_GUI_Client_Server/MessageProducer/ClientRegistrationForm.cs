@@ -40,7 +40,6 @@ namespace SMPClientProducer
                     writer.WriteLine(packet.UserID);
                     writer.WriteLine(packet.Password);
 
-                    // 🔥 NEW: read server response
                     string response = reader.ReadLine();
                     return response;
                 }
