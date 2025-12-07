@@ -6,17 +6,22 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using CryptographyUtilities;
+using System.Windows.Forms;
 
 namespace SMPServer
 {
     internal class MessageServer
     {
+        private static string publicKeyPath = "ServerPublic.key";
+        private static string privateKeyPath = "ServerPrivate.key";
+        private static string messagesPath = "Messages.txt";
+        private static string registeredClientsPath = "RegisteredClients.txt";
+
         public static event EventHandler<PacketEventArgs> PacketRecieved;
 
         private static void createKeys()
         {
-            string publicKeyPath = "ServerPublic.key";
-            string privateKeyPath = "ServerPrivate.key";
+            
 
             // If both exist, do nothing
             if (File.Exists(publicKeyPath) && File.Exists(privateKeyPath))
@@ -79,11 +84,20 @@ namespace SMPServer
                     string dateTime = networkStreamReader.ReadLine();
                     string message = networkStreamReader.ReadLine();
 
+                    string responsePacket = "";
+                    if (!validateUserCredentials(userID, password))
+                    {
+                        responsePacket = "AUTHENTICATION_ERROR";
+                        SendSmpResponsePacket(responsePacket, networkStream);
+                        networkStreamReader.Close();
+                        return;
+                    }
+
                     SmpPacket smpPacket = new SmpPacket(version, messageType, userID, password, priority, dateTime, message);
 
                     ProcessSmpPutPacket(smpPacket);
 
-                    string responsePacket = "Received Packet: " + DateTime.Now + Environment.NewLine;
+                    responsePacket = "Received Packet: " + DateTime.Now + Environment.NewLine;
 
                     SendSmpResponsePacket(responsePacket, networkStream);
 
@@ -99,9 +113,16 @@ namespace SMPServer
                     string userID = networkStreamReader.ReadLine();
                     string password = networkStreamReader.ReadLine();
                     string priority = networkStreamReader.ReadLine();
+                    string responsePacket = "";
+                    if (!validateUserCredentials(userID, password))
+                    {
+                        responsePacket = "AUTHENTICATION_ERROR";
+                        SendSmpResponsePacket(responsePacket, networkStream);
+                        networkStreamReader.Close();
+                        return;
+                    }
 
                     SmpPacket smpPacket = ProcessSmpGetPacket(userID, password, priority);
-                    string responsePacket = "";
                     if (smpPacket == null)
                     {
                         responsePacket = "NO_MESSAGE_FOUND";
@@ -109,7 +130,7 @@ namespace SMPServer
                         networkStreamReader.Close();
                         return;
                     }
-
+                    
                     string record = smpPacket.DateTime + Environment.NewLine;
                     record += smpPacket.Message + Environment.NewLine;
                     responsePacket = "Message Information: " + Environment.NewLine + record;
@@ -132,9 +153,8 @@ namespace SMPServer
                     // Registration logic
                     try
                     {
-                        string filePath = "RegisteredClients.txt";
 
-                        using (StreamWriter writer = new StreamWriter(filePath, append: true))
+                        using (StreamWriter writer = new StreamWriter(registeredClientsPath, append: true))
                         {
                             writer.WriteLine($"User ID: {userID}");
                             writer.WriteLine($"Password: {password}");
@@ -162,7 +182,52 @@ namespace SMPServer
             }
         }
 
-		private static void ProcessSmpPutPacket(SmpPacket smpPacket)
+        private static bool validateUserCredentials(string userID, string password)
+        {
+            // Check that the user is registered.
+
+            // Read from RegisteredClients.txt
+            try
+            {
+                if (!File.Exists(registeredClientsPath))
+                {
+                    return false;
+                }
+                string[] lines = File.ReadAllLines(registeredClientsPath);
+
+                for (int i = 0; i < lines.Length - 1; i++)
+                {
+                    string lineUser = lines[i].Trim();
+                    string linePass = lines[i + 1].Trim();
+
+                    // Skip any accidental empty lines
+                    if (string.IsNullOrWhiteSpace(lineUser) || string.IsNullOrWhiteSpace(linePass))
+                        continue;
+
+                    if (!lineUser.StartsWith("User ID:") || !linePass.StartsWith("Password:"))
+                        continue;
+
+                    string registeredUser = lineUser.Substring("User ID:".Length).Trim();
+                    string registeredPswd = linePass.Substring("Password:".Length).Trim();
+                    string decryptedPassword = Encryption.DecryptMessage(registeredPswd, privateKeyPath);
+
+                    if (registeredUser == userID && decryptedPassword == password)
+                        return true;
+                    
+                    i++; // Move to next pair
+
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogExeption(ex);
+                return false;
+            }
+        }
+
+
+        private static void ProcessSmpPutPacket(SmpPacket smpPacket)
         {
             try
             {
@@ -175,7 +240,7 @@ namespace SMPServer
                     record += smpPacket.DateTime + Environment.NewLine;
                     record += smpPacket.Message + Environment.NewLine;
 
-                    StreamWriter writer = new StreamWriter("Messages.txt", true);
+                    StreamWriter writer = new StreamWriter(messagesPath, true);
 
                     writer.WriteLine(record);
                     writer.Flush();
@@ -193,11 +258,11 @@ namespace SMPServer
         {
             try
             {
-                if (!File.Exists("Messages.txt"))
+                if (!File.Exists(messagesPath))
                 {
                     return null;
                 }
-                var lines = File.ReadAllLines("Messages.txt").ToList();
+                var lines = File.ReadAllLines(messagesPath).ToList();
                 var remaining = new List<string>();
 
                 SmpPacket foundPacket = null;
@@ -245,7 +310,7 @@ namespace SMPServer
                 }
 
                 // Rewrite file
-                File.WriteAllLines("Messages.txt", remaining);
+                File.WriteAllLines(messagesPath, remaining);
 
                 return foundPacket;
             }

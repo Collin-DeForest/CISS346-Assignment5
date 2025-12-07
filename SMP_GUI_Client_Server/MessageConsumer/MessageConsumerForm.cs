@@ -93,7 +93,11 @@ namespace SMPClientConsumer
 					MessageBox.Show("Server is Offline", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					textBoxMessageContent.Text = "";
 				}
-				else
+                else if (eventArgs.ResponseMessage == "AUTHENTICATION_ERROR")
+                {
+                    MessageBox.Show("Authentication Error: Invalid UserID or Password", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
 				{
 					// No issues, display the message
 					MessageBox.Show("Message retrieved...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
