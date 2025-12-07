@@ -59,3 +59,20 @@ C:\Users\Ben\source\repos\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServe
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.dll
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.pdb
 C:\Users\cedef\OneDrive - Western Washington University\My Classes\CISS 346\Assignment5\repo\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.Registrations.resources
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMPServer.exe.config
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMPServer.exe
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMPServer.pdb
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.dll
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMP_Library.dll
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\Cryptography.pdb
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMP_Library.pdb
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\bin\Debug\SMP_Library.dll.config
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\MessageServer.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.FormSmpServer.resources
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.Registrations.resources
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\MessageServer.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\MessageServer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\MessageS.41553B42.Up2Date
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.exe
+C:\Users\Lenovo\Desktop\CISS346\CISS346-Assignment5\SMP_GUI_Client_Server\MessageServer\obj\Debug\SMPServer.pdb
