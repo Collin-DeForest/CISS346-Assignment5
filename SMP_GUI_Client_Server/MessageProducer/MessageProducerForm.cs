@@ -86,7 +86,11 @@ namespace SMPClientProducer
 				{
 					MessageBox.Show("Server is Offline", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
-				else
+				else if (eventArgs.ResponseMessage == "AUTHENTICATION_ERROR")
+				{
+					MessageBox.Show("Authentication Error: Invalid UserID or Password", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
 				{
 					MessageBox.Show("Message sent...", "Message Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					textBoxServerResponse.Text = eventArgs.ResponseMessage;

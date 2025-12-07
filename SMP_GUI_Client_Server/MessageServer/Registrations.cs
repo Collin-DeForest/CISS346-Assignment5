@@ -72,7 +72,7 @@ namespace SMPServer
                     );
                 }
 
-                i += 2;
+                i += 1;
             }
         }
     }
