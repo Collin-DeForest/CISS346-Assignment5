@@ -72,7 +72,7 @@ namespace SMPServer
 
             string version = networkStreamReader.ReadLine();
 
-            if (version == Enumerations.SmpVersion.Version_2_0.ToString())
+            if (version == Enumerations.SmpVersion.Version_3_0.ToString())
             {
                 string messageType = networkStreamReader.ReadLine();
                 //Message Producer

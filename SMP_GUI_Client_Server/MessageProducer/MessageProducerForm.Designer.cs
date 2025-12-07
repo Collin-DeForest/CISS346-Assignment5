@@ -279,7 +279,7 @@
             this.MinimizeBox = false;
             this.Name = "MessageProducerForm";
             this.ShowIcon = false;
-            this.Text = "Message Producer Version 2.0";
+            this.Text = "Message Producer Version 3.0";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -46,7 +46,6 @@ namespace SMPClientProducer
             }
         }
 
-
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             if (textBoxRegistrationID.Text == "" || textBoxRegistrationPassword.Text == "")
@@ -58,7 +57,7 @@ namespace SMPClientProducer
             string password = Encryption.EncryptMessage(textBoxRegistrationPassword.Text, "ServerPublic.key");
 
             SmpPacket smpPacket = new SmpPacket(
-                Enumerations.SmpVersion.Version_2_0.ToString(),
+                Enumerations.SmpVersion.Version_3_0.ToString(),
                 Enumerations.SmpMessageType.RegisterClient.ToString(),
                 userID, password
             );

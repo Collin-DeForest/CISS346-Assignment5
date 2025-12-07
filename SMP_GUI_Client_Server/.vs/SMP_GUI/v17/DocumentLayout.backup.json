@@ -3,75 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageserver\\messageserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageserver\\messageserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\messageserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageproducer\\messageproducerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\messageproducerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageserver\\registrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\registrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageserver\\registrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\registrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B157F7F-77F5-4795-AF13-31776FB6769E}|..\\01_RSA_Encryption\\Cryptography\\CryptographyUtilities.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\01_rsa_encryption\\cryptography\\encryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageproducer\\messageproducerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\messageproducerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageserver\\messageserverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\messageserverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|solutionrelative:messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageproducer\\messageproducerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\messageproducerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAFBEB37-9C57-4123-A20A-63E2CA54B698}|MessageProducer\\MessageProducer.csproj|solutionrelative:messageproducer\\clientregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD0327A4-9533-4462-BA57-AAC3AFD75FA2}|SMP_Library\\SMP_Library.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\smp_library\\smppacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD0327A4-9533-4462-BA57-AAC3AFD75FA2}|SMP_Library\\SMP_Library.csproj|solutionrelative:smp_library\\smppacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD0327A4-9533-4462-BA57-AAC3AFD75FA2}|SMP_Library\\SMP_Library.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\smp_library\\enumerations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD0327A4-9533-4462-BA57-AAC3AFD75FA2}|SMP_Library\\SMP_Library.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\smp_library\\enumerations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD0327A4-9533-4462-BA57-AAC3AFD75FA2}|SMP_Library\\SMP_Library.csproj|solutionrelative:smp_library\\enumerations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageserver\\messageserverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|c:\\users\\cedef\\onedrive - western washington university\\my classes\\ciss 346\\assignment5\\repo\\ciss346-assignment5\\smp_gui_client_server\\messageserver\\messageserverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\messageserverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|solutionrelative:messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageconsumer\\messageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|solutionrelative:messageconsumer\\messageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageconsumer\\messageconsumerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|solutionrelative:messageconsumer\\messageconsumerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageserver\\messageserverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A24CEDDA-A4AA-4ECA-808F-0C5BCC8C7D27}|MessageServer\\MessageServer.csproj|solutionrelative:messageserver\\messageserverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77160F5-577A-4D0E-BE89-532F7AE73D41}|MessageConsumer\\MessageConsumer.csproj|solutionrelative:messageconsumer\\messageconsumerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,221 +44,74 @@
               "RelativeDocumentMoniker": "MessageServer\\MessageServer.cs",
               "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServer.cs",
               "RelativeToolTip": "MessageServer\\MessageServer.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAqwEMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAAHQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:31:09.293Z",
+              "WhenOpened": "2025-12-07T04:46:39.064Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MessageProducerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.Designer.cs",
-              "RelativeDocumentMoniker": "MessageProducer\\MessageProducerForm.Designer.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.Designer.cs",
-              "RelativeToolTip": "MessageProducer\\MessageProducerForm.Designer.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:32:00.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClientRegistrationForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs",
-              "RelativeDocumentMoniker": "MessageProducer\\ClientRegistrationForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs [Design]",
-              "RelativeToolTip": "MessageProducer\\ClientRegistrationForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:05:47.802Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientRegistrationForm.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs",
-              "RelativeDocumentMoniker": "MessageProducer\\ClientRegistrationForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs",
-              "RelativeToolTip": "MessageProducer\\ClientRegistrationForm.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAASwEQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:12:10.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Registrations.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\Registrations.cs",
-              "RelativeDocumentMoniker": "MessageServer\\Registrations.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\Registrations.cs [Design]",
-              "RelativeToolTip": "MessageServer\\Registrations.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:24:30.4Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Registrations.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\Registrations.cs",
-              "RelativeDocumentMoniker": "MessageServer\\Registrations.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\Registrations.cs",
-              "RelativeToolTip": "MessageServer\\Registrations.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDUAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T02:26:16.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "MessageProducerForm.cs",
               "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.cs",
               "RelativeDocumentMoniker": "MessageProducer\\MessageProducerForm.cs",
               "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.cs",
               "RelativeToolTip": "MessageProducer\\MessageProducerForm.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAawEEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAASwDsAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T21:46:03.518Z",
+              "WhenOpened": "2025-12-07T04:46:30.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Encryption.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\01_RSA_Encryption\\Cryptography\\Encryption.cs",
-              "RelativeDocumentMoniker": "..\\01_RSA_Encryption\\Cryptography\\Encryption.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\01_RSA_Encryption\\Cryptography\\Encryption.cs",
-              "RelativeToolTip": "..\\01_RSA_Encryption\\Cryptography\\Encryption.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAIAwwEQAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MessageConsumerForm.cs",
+              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs",
+              "RelativeDocumentMoniker": "MessageConsumer\\MessageConsumerForm.cs",
+              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs",
+              "RelativeToolTip": "MessageConsumer\\MessageConsumerForm.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADgvyYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:25:09.102Z",
+              "WhenOpened": "2025-12-07T04:46:22.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MessageServerForm.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.cs",
-              "RelativeDocumentMoniker": "MessageServer\\MessageServerForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.cs",
-              "RelativeToolTip": "MessageServer\\MessageServerForm.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAASwIYAAABUAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ClientRegistrationForm.cs",
+              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs",
+              "RelativeDocumentMoniker": "MessageProducer\\ClientRegistrationForm.cs",
+              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\ClientRegistrationForm.cs",
+              "RelativeToolTip": "MessageProducer\\ClientRegistrationForm.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwDsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T22:11:41.429Z",
+              "WhenOpened": "2025-12-07T04:46:12.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MessageProducerForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.cs",
-              "RelativeDocumentMoniker": "MessageProducer\\MessageProducerForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageProducer\\MessageProducerForm.cs [Design]",
-              "RelativeToolTip": "MessageProducer\\MessageProducerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T01:38:55.75Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Enumerations.cs",
               "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\SMP_Library\\Enumerations.cs",
               "RelativeDocumentMoniker": "SMP_Library\\Enumerations.cs",
               "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\SMP_Library\\Enumerations.cs",
               "RelativeToolTip": "SMP_Library\\Enumerations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:30:37.919Z",
+              "WhenOpened": "2025-12-07T04:45:59.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SmpPacket.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\SMP_Library\\SmpPacket.cs",
-              "RelativeDocumentMoniker": "SMP_Library\\SmpPacket.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\SMP_Library\\SmpPacket.cs",
-              "RelativeToolTip": "SMP_Library\\SmpPacket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T21:50:43.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "MessageServerForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.cs",
               "RelativeDocumentMoniker": "MessageServer\\MessageServerForm.cs",
               "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.cs [Design]",
               "RelativeToolTip": "MessageServer\\MessageServerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T21:28:25.752Z",
+              "WhenOpened": "2025-12-07T04:45:40.642Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MessageConsumerForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs",
-              "RelativeDocumentMoniker": "MessageConsumer\\MessageConsumerForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs [Design]",
-              "RelativeToolTip": "MessageConsumer\\MessageConsumerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:31:23.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MessageConsumerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.Designer.cs",
-              "RelativeDocumentMoniker": "MessageConsumer\\MessageConsumerForm.Designer.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.Designer.cs",
-              "RelativeToolTip": "MessageConsumer\\MessageConsumerForm.Designer.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:31:50.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MessageConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumer.cs",
-              "RelativeDocumentMoniker": "MessageConsumer\\MessageConsumer.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumer.cs",
-              "RelativeToolTip": "MessageConsumer\\MessageConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:27:05.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MessageServerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.Designer.cs",
-              "RelativeDocumentMoniker": "MessageServer\\MessageServerForm.Designer.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageServer\\MessageServerForm.Designer.cs",
-              "RelativeToolTip": "MessageServer\\MessageServerForm.Designer.cs",
-              "ViewState": "AgIAAAABAAAAAAAAAAAWwBcBAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:32:06.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MessageConsumerForm.cs",
-              "DocumentMoniker": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs",
-              "RelativeDocumentMoniker": "MessageConsumer\\MessageConsumerForm.cs",
-              "ToolTip": "C:\\Users\\cedef\\OneDrive - Western Washington University\\My Classes\\CISS 346\\Assignment5\\repo\\CISS346-Assignment5\\SMP_GUI_Client_Server\\MessageConsumer\\MessageConsumerForm.cs",
-              "RelativeToolTip": "MessageConsumer\\MessageConsumerForm.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAASwGsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T20:30:25.772Z"
             }
           ]
         }

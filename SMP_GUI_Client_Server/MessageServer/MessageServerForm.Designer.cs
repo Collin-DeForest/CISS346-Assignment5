@@ -334,7 +334,7 @@
             this.MinimizeBox = false;
             this.Name = "FormSmpServer";
             this.ShowIcon = false;
-            this.Text = "Message Server Version 2.0";
+            this.Text = "Message Server Version 3.0";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
