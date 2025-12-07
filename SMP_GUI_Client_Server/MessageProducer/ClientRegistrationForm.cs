@@ -49,6 +49,11 @@ namespace SMPClientProducer
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
+            if (textBoxRegistrationID.Text == "" || textBoxRegistrationPassword.Text == "")
+            {
+                MessageBox.Show("Error: UserID and Password cannot be empty.");
+                return;
+            }
             string userID = Encryption.EncryptMessage(textBoxRegistrationID.Text, "ServerPublic.key");
             string password = Encryption.EncryptMessage(textBoxRegistrationPassword.Text, "ServerPublic.key");
 
@@ -57,13 +62,19 @@ namespace SMPClientProducer
                 Enumerations.SmpMessageType.RegisterClient.ToString(),
                 userID, password
             );
-
-            string response = SendRegisterPacket(
-                textBoxServerIPRegistration.Text,
-                int.Parse(textBoxRegistrationPortNumber.Text),
-                smpPacket
-            );
-
+            string response = "";
+            try
+            {
+                response = SendRegisterPacket(
+                    textBoxServerIPRegistration.Text,
+                    int.Parse(textBoxRegistrationPortNumber.Text),
+                    smpPacket
+                );
+            }
+            catch (Exception ex)
+            {
+                response = "Error: Server is inactive.";
+            }
             MessageBox.Show(response);
             this.Close();
         }
